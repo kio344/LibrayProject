@@ -77,7 +77,10 @@ public enum RentalStatus {
 
 ### com.codefty.library.rental : 도서 대여, 반납
 ```java
+package com.codefty.library.rental;
+import com.codefty.library.book.Book;
 
+public abstract class RentalAction {
 
 	//도서 대여
 	public abstract void rentBook(Book book);
@@ -90,6 +93,8 @@ public enum RentalStatus {
 	
 	//도서 대기
 	public abstract void readyBook(Book book);
+}
+
 
 ```
 
